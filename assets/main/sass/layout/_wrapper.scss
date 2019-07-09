@@ -6,8 +6,12 @@
 
 /* Wrapper */
 
-	#wrapper {
-		@include vendor('display', 'flex');
-		@include vendor('flex-direction', 'row-reverse');
-		min-height: 100vh;
-	}
+#wrapper {
+    @include vendor("display", "flex");
+    @include vendor("flex-direction", "row-reverse");
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: _palette(bg);
+}
