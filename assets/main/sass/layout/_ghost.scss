@@ -12,7 +12,7 @@
     display: inline-flex;
     height: 28px;
 
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
         display: flex;
         justify-content: center;
         text-align: center;
@@ -24,7 +24,7 @@
     transform: none !important;
 }
 
-@include breakpoint('<=small') {
+@include breakpoint("<=small") {
     #sidebar:not(.inactive) .toggle:before {
         color: #fff;
     }
@@ -33,11 +33,6 @@
         background: #f56a6a;
     }
 }
-
-#banner {
-    border-bottom: solid 2px rgba(210, 215, 217, 0.75);
-}
-
 
 .content {
     max-width: 700px;
@@ -58,7 +53,6 @@
     border-top: solid 2px rgba(210, 215, 217, 0.75);
 }
 
-
 // Tag Archive
 // --------------------------------------------
 
@@ -67,7 +61,6 @@
     border-bottom: solid 2px rgba(210, 215, 217, 0.75);
     text-align: center;
 }
-
 
 // Author Archive
 // --------------------------------------------
@@ -79,7 +72,6 @@
     padding: 4em 0 3em 0;
     border-bottom: solid 2px rgba(210, 215, 217, 0.75);
     text-align: center;
-
 }
 
 .author-profile-image {
@@ -87,7 +79,7 @@
     margin: 0 0 15px 0;
     width: 100px;
     height: 100px;
-    box-shadow: rgba(255,255,255,0.1) 0 0 0 6px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 0 0 6px;
     display: block;
     background: #222;
     border-radius: 100%;
@@ -128,7 +120,7 @@
     margin: 0 -40px;
 }
 
-.author-box  {
+.author-box {
     flex: 1 1 300px;
     display: inline-flex;
     align-items: flex-start;
@@ -187,7 +179,8 @@
 // --------------------------------------------
 
 // Markdown images and videos
-.content p > img, .content p > video {
+.content p > img,
+.content p > video {
     max-width: 100%;
 }
 
@@ -218,17 +211,17 @@
     margin-right: -6rem;
     width: calc(100% + 12rem);
 
-    @include breakpoint('<=large') {
+    @include breakpoint("<=large") {
         margin-left: -4rem;
         margin-right: -4rem;
         width: calc(100% + 8rem);
     }
-    @include breakpoint('<=medium') {
+    @include breakpoint("<=medium") {
         margin-left: -2rem;
         margin-right: -2rem;
         width: calc(100% + 4rem);
     }
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
@@ -241,17 +234,17 @@
     margin-right: -14.1rem;
     width: calc(100% + 28.25rem);
 
-    @include breakpoint('<=large') {
+    @include breakpoint("<=large") {
         margin-left: -8rem;
         margin-right: -8rem;
         width: calc(100% + 16rem);
     }
-    @include breakpoint('<=medium') {
+    @include breakpoint("<=medium") {
         margin-left: -4rem;
         margin-right: -4rem;
         width: calc(100% + 8rem);
     }
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
         margin-left: -2rem;
         margin-right: -2rem;
         width: calc(100% + 4rem);
@@ -265,17 +258,17 @@
     margin-right: -6rem;
     width: calc(100% + 12rem);
 
-    @include breakpoint('<=large') {
+    @include breakpoint("<=large") {
         margin-left: -4rem;
         margin-right: -4rem;
         width: calc(100% + 8rem);
     }
-    @include breakpoint('<=medium') {
+    @include breakpoint("<=medium") {
         margin-left: -2rem;
         margin-right: -2rem;
         width: calc(100% + 4rem);
     }
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
